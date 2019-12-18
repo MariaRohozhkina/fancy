@@ -1,0 +1,153 @@
+.main {
+  display: flex;
+  background: rgba(0, 0, 0, 0.7); /* Цвет фона */
+  color: #fff; /* Цвет текста */
+  margin-right: 1%;
+}
+
+.weather-block {
+  width: 50%;
+}
+
+.location {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin-top: 3%;
+  height: 50px;
+  align-items: center;
+}
+
+.nav ul li {
+  margin-left: 3%;
+}
+
+.search {
+  width: 40%;
+}
+
+.search input {
+  width: 100%;
+}
+
+.weather-today {
+  margin: 3%;
+}
+
+.data-and-time-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.current-temperature {
+  display: flex;
+}
+
+.current-temperature__number {
+  width: 30%;
+  font-size: 80px;
+}
+
+.weather-for-three-days {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  background: #f5cf86;
+  opacity: 0.9;
+  border-radius: 30%;
+  font-size: 17px;
+  outline: none;
+}
+
+#mapContainer {
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  width: 40%;
+}
+
+#longlat {
+  position: absolute;
+  bottom: 2%;
+}
+
+#currentTemperaturePicture {
+  height: 100%;
+  width: 20%;
+}
+
+.weather-for-three-days div div {
+  display: flex;
+}
+
+.current-weather {
+  margin-left: 3%;
+}
+
+#body {
+  width: 100%;
+  background-position: center;
+}
+
+#voiceIcon {
+  width: 40px;
+}
+
+#voiceContainer {
+  position: relative;
+  top: -43%;
+  right: -45%;
+  width: 50px;
+  z-index: 2;
+}
+
+.weather-for-three-days {
+  margin-left: 20%;
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+  #currentTemperaturePicture {
+    width: 50%;
+  }
+
+  .weather-today {
+    margin-top: 500px;
+  }
+
+  .location {
+    width: 41%;
+  }
+
+  #mapContainer {
+    width: 92%;
+    margin-left: -22%;
+    margin-top: 7%;
+  }
+
+  canvas {
+    width: 240px;
+  }
+
+  #currentTime {
+    margin-left: 5%;
+  }
+
+  .weather-for-three-days {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #voiceContainer {
+    z-index: 3;
+  }
+}
