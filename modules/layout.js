@@ -83,6 +83,7 @@ currentTemperaturePicture.id = "currentTemperaturePicture";
 currentTemperatureContainer.appendChild(currentTemperaturePicture);
 
 const characteristics = document.createElement("div");
+characteristics.className = "characteristics";
 currentWeather.appendChild(characteristics);
 
 export const summary = document.createElement("p");

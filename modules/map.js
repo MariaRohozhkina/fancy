@@ -39,7 +39,7 @@ window.onload = function() {
         window.webkitSpeechRecognition ||
         window.mozSpeechRecognition ||
         window.msSpeechRecognition)();
-      SpeechRecognition.lang = "ru-RU";
+      // SpeechRecognition.lang = "ru-RU, en-US";
       const search = document.querySelector(".mapboxgl-ctrl-geocoder--input");
       SpeechRecognition.onresult = function(event) {
         search.value = event.results[0][0].transcript;

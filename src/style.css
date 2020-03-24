@@ -78,7 +78,7 @@ button {
 
 #longlat {
   position: absolute;
-  bottom: 2%;
+  bottom: 6%;
 }
 
 #currentTemperaturePicture {
@@ -116,6 +116,18 @@ button {
 }
 
 @media (min-width: 320px) and (max-width: 640px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .weather-block {
+    width: 100%;
+  }
+
+.location {
+    width: 100%;
+  }
+
   #currentTemperaturePicture {
     width: 50%;
   }
@@ -124,13 +136,8 @@ button {
     margin-top: 500px;
   }
 
-  .location {
-    width: 41%;
-  }
-
   #mapContainer {
     width: 92%;
-    margin-left: -22%;
     margin-top: 7%;
   }
 
@@ -145,9 +152,15 @@ button {
   .weather-for-three-days {
     display: flex;
     flex-direction: column;
+    margin-left: 30%;
   }
 
   #voiceContainer {
     z-index: 3;
+    top: -1429px;
+  }
+
+  .characteristics {
+    text-align: center;
   }
 }
