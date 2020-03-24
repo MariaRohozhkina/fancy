@@ -103,7 +103,9 @@ fetch(url)
         fetch(url1)
           .then(res => res.json())
           .then(data => {
-            myModule.body.style.backgroundImage = `url(${data.urls.small})`;
+            myModule.body.style.backgroundImage = `url(${data.urls.regular})`;
+            myModule.body.style.repeat = 'no-repeat';
+            myModule.body.style.backgroundSize = 'cover';
           });
 
         // Change background by summary of Weather, times of a day and season
@@ -123,7 +125,7 @@ fetch(url)
           fetch(url)
             .then(res => res.json())
             .then(data => {
-              myModule.body.style.backgroundImage = `url(${data.urls.small})`;
+              myModule.body.style.backgroundImage = `url(${data.urls.regular})`;
             });
         });
       });
